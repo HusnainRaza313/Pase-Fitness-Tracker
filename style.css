@@ -1,0 +1,343 @@
+:root {
+    --bg: #F3F4EE;
+    --surface: #FFFFFF;
+    --ink: #161F1A;
+    --ink-soft: #63705F;
+    --line: #DCE1D5;
+    --track: #E8EBE1;
+    --accent-steps: #3D8BFF;
+    --accent-cal: #FF5A36;
+    --accent-active: #7C5CFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+}
+
+.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+}
+
+.display {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+}
+
+.label-caps {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.muted {
+    color: var(--ink-soft);
+}
+
+/* header */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* lane divider */
+.lane-divider {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 32px 0;
+}
+
+    .lane-divider .line {
+        flex: 1;
+        height: 1px;
+        background: var(--line);
+    }
+
+/* cards */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+    .card-head.wrap-row {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+.h2 {
+    font-size: 20px;
+}
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    cursor: pointer;
+    padding: 0;
+}
+
+/* goals editor */
+.goals-editor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-end;
+    background: var(--track);
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+/* fields / inputs */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+input, select {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: #fff;
+    color: var(--ink);
+}
+
+    input:focus, select:focus {
+        outline: 2px solid var(--accent-steps);
+        outline-offset: 1px;
+    }
+
+::placeholder {
+    color: #A6AE9E;
+}
+
+#goal-steps, #goal-calories, #goal-active {
+    width: 90px;
+}
+
+#f-duration, #f-steps, #f-calories {
+    width: 110px;
+}
+
+#f-type, #f-date {
+    width: 150px;
+}
+
+.btn-dark, .btn-ghost {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-dark {
+    background: var(--ink);
+    color: #fff;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--ink-soft);
+    border: 1px solid var(--line);
+}
+
+/* rings */
+.rings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.ring-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.ring-progress {
+    transition: stroke-dashoffset 0.6s ease;
+}
+
+/* entry form */
+.entry-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+/* chart */
+#chart {
+    display: block;
+}
+
+.totals {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+    .totals b {
+        color: var(--ink);
+        margin-left: 4px;
+    }
+
+/* activity log */
+.log-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.log-day-label {
+    margin-bottom: 8px;
+}
+
+.log-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.log-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.log-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background: var(--track);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.log-type {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.log-stats {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 13px;
+    color: var(--ink-soft);
+}
+
+    .log-stats .cal {
+        color: var(--accent-cal);
+    }
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    color: var(--ink-soft);
+    padding: 0;
+}
+
+    .delete-btn:hover {
+        color: var(--accent-cal);
+    }
+
+.footer {
+    text-align: center;
+    margin-top: 32px;
+}
+
+@media (max-width: 640px) {
+    .topbar-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .entry-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+        .entry-form .field, .entry-form select, .entry-form input, #f-type, #f-date,
+        #f-duration, #f-steps, #f-calories {
+            width: 100%;
+        }
+}
