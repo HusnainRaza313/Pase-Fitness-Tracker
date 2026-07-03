@@ -64,13 +64,8 @@ Fitness-Tracker-Pro/
 
 ## 🌐 Live Demo
 
-After publishing with GitHub Pages, add your website link here.
+(https://husnainraza313.github.io/Pase-Fitness-Tracker/)
 
-Example:
-
-https://yourusername.github.io/Fitness-Tracker-Pro/
-
----
 
 ## 🎯 Project Objective
 
@@ -101,11 +96,6 @@ Computer Science Student
 
 CodeAlpha Web Development Intern
 
-GitHub: https://github.com/YOUR_GITHUB_USERNAME
-
-LinkedIn: https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/
-
----
 
 ## 📄 License
 
