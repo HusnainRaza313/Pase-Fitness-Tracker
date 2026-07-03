@@ -1,76 +1,112 @@
-﻿PACE — Fitness Tracker
+# 🏋️ Pase Fitness Tracker 
 
-A simple, clean fitness tracking web app built with vanilla HTML, CSS, and JavaScript. Log daily workouts, steps, and calories, and see your progress on a dashboard with stopwatch-style progress rings and a weekly chart.
+A modern and responsive ** Pace Fitness Tracker ** web application built using **HTML, CSS, and JavaScript**. It helps users track their daily fitness activities, monitor progress, and store records locally in the browser.
 
-Built for CodeAlpha Task 3: Fitness Tracker App.
+---
 
+## 🚀 Features
 
-Features
+- 👣 Track daily steps
+- 🔥 Record calories burned
+- 🏃 Log workout duration
+- 📝 Add exercise type
+- ✏️ Edit activities
+- 🗑️ Delete activities
+- 🔍 Search activities
+- 🌙 Dark Mode
+- 📊 Weekly progress chart using Chart.js
+- 📈 Animated progress bars
+- 💾 Local Storage (data saved after refresh)
+- 📱 Fully responsive design
+- ✨ Modern Glassmorphism UI
 
+---
 
-Daily dashboard — three progress rings show today's steps, calories burned, and active minutes against your goals
-Manual activity logging — add entries with activity type (Walking, Running, Cycling, Strength, Swimming, Other), duration, steps, and calories
-Editable goals — set your own daily targets for steps, calories, and active minutes
-Weekly progress chart — combined bar + line chart of steps and calories over the last 7 days
-Activity log — all entries grouped by day, with the ability to delete any entry
-Streak tracker — counts consecutive days with at least one logged activity
-Persistent storage — all data is saved in the browser's localStorage, so it's still there when you come back
-Responsive design — works on desktop and mobile screens
+## 🛠️ Technologies Used
 
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Chart.js
+- Font Awesome
+- Google Fonts (Poppins)
+- Local Storage API
 
-Tech Stack
+---
 
-LayerTechnologyStructureHTML5StylingCSS3 (custom properties, Flexbox)LogicVanilla JavaScript (ES6+)StorageBrowser localStorageFontsGoogle Fonts (Bebas Neue, Inter, JetBrains Mono)
+## 📂 Project Structure
 
-No frameworks, build tools, or external JS libraries are required — everything runs directly in the browser.
+```
+Fitness-Tracker-Pro/
+│── index.html
+│── style.css
+│── script.js
+│── README.md
+```
 
-Project Structure
+---
 
-pace-fitness-tracker/
-├── index.html      # App structure and layout
-├── style.css        # All styling (theme, layout, components)
-├── script.js         # App logic: state, rendering, events, localStorage
-└── README.md        # This file
+## 📸 Screenshot
 
-Getting Started
+## Screenshot
 
-No installation or build step needed.
+![Fitnes-Tracker-Pro](app1.png)
+---
 
+## ▶️ How to Run
 
-Download or clone this repository
-Open index.html directly in any modern browser (Chrome, Firefox, Edge, Safari)
+1. Download or clone this repository.
+2. Open the project folder.
+3. Double-click **index.html** or open it in your web browser.
+4. Start adding your fitness activities.
 
+---
 
-Or, for a local dev server (optional, avoids any browser file-access quirks):
+## 🌐 Live Demo
 
-bash# Using Python
-python -m http.server 8000
+After publishing with GitHub Pages, add your website link here.
 
-# Using Node (npx)
-npx serve .
+Example:
 
-Then visit http://localhost:8000.
+https://yourusername.github.io/Fitness-Tracker-Pro/
 
-How It Works
+---
 
+## 🎯 Project Objective
 
-On first load, the app seeds itself with one week of sample activity data so the dashboard isn't empty. This is stored in localStorage under the key pace_entries.
-Default goals (10,000 steps / 500 kcal / 45 active minutes) are stored under pace_goals.
-Adding, editing goals, or deleting an entry updates localStorage immediately, so your data persists across page reloads and browser sessions on the same device.
-To reset the app to a clean state, clear the site's local storage from your browser's developer tools (Application → Local Storage) or clear browsing data for the page.
+This project was developed as **Task 3** for the **CodeAlpha Web Development Internship**.
 
+The objective was to create a fitness tracking application that allows users to log and manage their daily fitness activities through a clean, responsive, and interactive interface.
 
-Possible Future Enhancements
+---
 
+## 🔮 Future Improvements
 
-Sync data across devices with a backend (Firebase / a REST API + database)
-User accounts and authentication
-Export activity history to CSV
-Import step/heart-rate data from wearables or health APIs
-Monthly/yearly trend views
+- Firebase Database Integration
+- User Login & Registration
+- BMI Calculator
+- Water Intake Tracker
+- Sleep Tracker
+- Monthly Reports
+- Export Data to PDF
+- Mobile App Version
 
+---
 
-Author
+## 👨‍💻 Developed By
 
-Husni — Computer Science student, Bahria University Lahore
-Submitted as part of the CodeAlpha App Development Internship.
+**Muhammad Husnain Raza**
+
+Computer Science Student
+
+CodeAlpha Web Development Intern
+
+GitHub: https://github.com/YOUR_GITHUB_USERNAME
+
+LinkedIn: https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
