@@ -50,7 +50,7 @@ Fitness-Tracker-Pro/
 
 ## Screenshot
 
-![Fitnes-Tracker-Pro](app1.png)
+![Fitnes-Tracker-Pro](app-1.png)
 ---
 
 ## ▶️ How to Run
